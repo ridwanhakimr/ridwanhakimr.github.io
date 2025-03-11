@@ -1,211 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta name="google-site-verification" content="Vt-LXyxksE5WnpoNgAIkP1mF3Fz8ie8s_ISd_snnkZ0" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portofolio Ridwan Hakim R</title>
-    <!-- Link CDN Bootstrap -->
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ridwan Portfolio</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-    <style>
-      body {
-        font-family: century gothic;
-      }
-    </style>
-    <!-- penambahan tracker -->
-    <script type="module" src="https://cdn.jsdelivr.net/gh/domyid/tracker@1.0.2/index.js"></script>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm p-3 fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Portofolio Saya</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+    <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-ID.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Ridwan</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Beranda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#about">Tentang Saya</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#kontak">Kontak</a>
-            </li>
-          </ul>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
         </div>
-      </div>
-    </nav>
-    <!-- Akhir Navbar -->
-
-    <!-- Jumbotron -->
-    <div class="pt-5 text-black" style="background-color: #e2e1e1" id="home">
-      <div class="container pt-5">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-sm-4">
-            <img src="img/IMG_2022.JPG" alt="RidwanHR" width="350" class="rounded-circle img-thumbnail bg-secondary" />
-          </div>
-          <div class="col-sm-5">
-            <h1 class="fw-bold">Ridwan Hakim Ramadhan</h1>
-            <p>Saya Adalah Mahasiswa ULBI</p>
-            <p style="margin-top: -20px">NPM : 714240050</p>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,128L720,64L1440,160L1440,320L720,320L0,320Z"></path></svg>
     </div>
-    <!-- Akhir Jumbotron -->
+</nav>
 
-    <!-- tentang saya -->
-    <div id="about" class="pt-5">
-      <div class="container pt-5">
-        <div class="row text-center">
-          <div class="col pb-3">
-            <h2>Tentang Saya</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3">
-            <img src="img/IMG-RHR.jpeg" alt="RidwanHR2" width="300" class="img-thumbnail bg-secondary" />
-          </div>
-          <div class="col-md">
-            <table class="tablebiodata">
-              <tr>
-                <td>Nama</td>
-                <td>:</td>
-                <td>Ridwan Hakim Ramahan</td>
-              </tr>
-              <tr>
-                <td>NPM</td>
-                <td>:</td>
-                <td>714240050</td>
-              </tr>
-              <tr>
-                <td>Sekolah</td>
-                <td>:</td>
-                <td>Universitas Logistik dan Bisnis Internasional</td>
-              </tr>
-              <tr>
-                <td>prodi</td>
-                <td>:</td>
-                <td>D4 Teknik Informatika</td>
-              </tr>
-              <tr>
-                <td>Kelas</td>
-                <td>:</td>
-                <td>TI 1A</td>
-              </tr>
-            </table>
-            <br />
-            <p>Saya adalah mahasiswa ULBI. Saya juga adalah orang yang mudah beradaptasi di lingkungan baru dan menyukai hal-hal yang baru atau menarik untuk saya</p>
-          </div>
-        </div>
-      </div>
-      <br /><br />
+<!-- Hero Section -->
+<header id="home" class="hero-section text-center text-white d-flex align-items-center bg-dark">
+    <div class="container">
+        <h1 class="display-4">Hello, I'm Ridwan</h1>
+        <p class="lead">Software Developer | UI/UX Enthusiast</p>
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+    </div>
+</header>
 
-      <div class="container">
+<!-- About Section -->
+<section id="about" class="py-5">
+    <div class="container text-center">
+        <h2>About Me</h2>
+        <p>Saya adalah seorang pengembang web yang berfokus pada teknologi modern.</p>
+    </div>
+</section>
+
+<!-- Project Section -->
+<section id="projects" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center">My Projects</h2>
         <div class="row">
-          <div class="col">
-            <h4>Pendidikan</h4>
-            <div class="row">
-              <div class="col">
-                <div class="card" style="width: 20rem">
-                  <img
-                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6nalN1cuj3BMOJ08TGKNd0TehbhfL0z9XFUIKM_iW1QMluWJVmUYGCqTtx1G7-Ov6GW9U2l9xMopYPh5jdtxhkXqU_ctNo2DMyJJ6QqV6BdmPXJKVkBUqfk-fUOn5mw/s220/%23Profile+IG.png" class="card-img-top" alt="ulbi"/>
-                  <div class="card-body">
-                    <p class="card-text">Universitas Logistik dan Bisnis Internasional (ULBI)</p>
-                    <p class="card-text">D4 Teknik Informatika | <br />2024 - Sekarang</p>
-                  </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/img/project1.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">Deskripsi proyek singkat.</p>
+                        <a href="#" class="btn btn-dark">View</a>
+                    </div>
                 </div>
-                <div class="card" style="width: 20rem">
-                  <img src="https://secure.gravatar.com/avatar/a8143e73afd65f28a3944d91ca331fee?s=500&d=mm&r=g" class="card-img-top" alt="smkn2cimahi"/>
-                  <div class="card-body">
-                    <p class="card-text">SMKN2 CIMAHI</p>
-                    <p class="card-text">Rekayasa Perangkat Lunak | <br />2020 - 2023</p>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-          <div class="col">
-            <h4>Pengalaman</h4>
-            <div class="row">
-              <div class="col">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTohGAJzn6v3apM-xr6A5QWfHkcow-XIEHuKA&s" alt="alkindo" width="300"/>
-                <h5>PT. Alkindo Naratama Tbk</h5>
-                <p>Admin Produksi (2024- 2024)</p>
-                <p>
-                  <ul>
-                    <li>Menginput data-data barang, lalu dijadikan barcode untuk di tempel di barang</li>
-                    <li>Opname bulanan barang</li>
-                  </ul>
-                </p>
-                <br>
-                <h4>Keahlian Bahasa Pemrograman</h4>
-                <div class="container text-center">
-                  <div class="row">
-                    <div class="col">
-                      <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="HTML"/>
-                      <p>HTML</p>
-                    </div>
-                    <div class="col">
-                      <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="CSS"/>
-                      <p>CSS</p>
-                    </div>
-                    <div class="col">
-                      <img src="https://img.icons8.com/?size=100&id=PndQWK6M1Hjo&format=png&color=000000" alt="bs5"/>
-                      <p>Bootstrap 5</p>
-                    </div>
-                    <div class="col">
-                      <img src="https://img.icons8.com/?size=100&id=fAMVO_fuoOuC&format=png&color=000000" alt="PHP"/>
-                      <p>php</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+            <!-- Tambahkan lebih banyak proyek -->
         </div>
-      </div>
     </div>
-    <!-- akhir tentang saya -->
+</section>
 
-    <!-- kontak -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#273036" fill-opacity="1" d="M0,96L720,128L1440,192L1440,320L720,320L0,320Z"></path></svg>
-    <!-- akhir kontak -->
-    <div id="kontak" style="background-color: #273036;" class="text-white text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h2>Kontak Saya</h2>
-            <div class="container text-center p-5">
-              <div class="row p-md-3">
-                <div class="col">
-                  <a href="https://www.instagram.com/ridwan.hkmr/" target="_blank"> <img src="https://img.icons8.com/?size=100&id=32309&format=png&color=FFFFFF" alt="instagram"></a>
-                </div>
-                <div class="col">
-                  <a href="https://wa.me/+6289604482359" target="_blank"> <img src="https://img.icons8.com/?size=100&id=16733&format=png&color=FFFFFF" alt="whatsapp"></a>
-                </div>
-                <div class="col">
-                  <a href="https://github.com/911AGENT" target="_blank"> <img src="https://img.icons8.com/?size=100&id=12599&format=png&color=FFFFFF" alt="github"></a>
-                </div>
-                <div class="col">
-                  <a href="mailto:ridwankuykiy@gmail.com" target="_blank"> <img src="https://img.icons8.com/?size=100&id=Y2GfpkgYNp42&format=png&color=FFFFFF" alt="gmail"></a>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container text-center">
+        <h2>Contact Me</h2>
+        <p>Email: ridwan@example.com</p>
+        <p>LinkedIn: linkedin.com/in/ridwan</p>
     </div>
+</section>
 
-    <!-- footer -->
-     <footer class="bg-dark text-white p-3">
-      &copy; 2024 RHRSITUS | Hak Cipta Dilindungi
-     </footer>
-    <!-- akhir footer -->
-    <!-- js bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Ridwan Hakim Ramadhan</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="assets/js/script.js"></script>
+</body>
 </html>

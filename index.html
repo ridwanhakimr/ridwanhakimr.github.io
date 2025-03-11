@@ -1,60 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- tambahan google console -->
     <meta name="google-site-verification" content="Vt-LXyxksE5WnpoNgAIkP1mF3Fz8ie8s_ISd_snnkZ0" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio Ridwan Hakim R</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
     <!-- Link CDN Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-    <style>
-      body {
-        font-family: century gothic;
-      }
-    </style>
     <!-- penambahan tracker -->
     <script type="module" src="https://cdn.jsdelivr.net/gh/domyid/tracker@1.0.2/index.js"></script>
+    <!-- font -->
+    <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-ID.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm p-3 fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3 fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Portofolio Saya</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <a class="navbar-brand" href="#">RidwanHR</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Beranda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#about">Tentang Saya</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#kontak">Kontak</a>
-            </li>
-          </ul>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Beranda</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">Tentang Saya</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projek</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+            </ul>
         </div>
       </div>
     </nav>
     <!-- Akhir Navbar -->
 
+    <!--  Hero Section -->
+        <header id="home" class="hero-section text-center text-white d-flex align-items-center bg-dark" style="padding-top: 100px; padding-bottom: 330px;">
+          <div class="container mt-5">
+              <h1 class="display-3">Hello, Saya Ridwan Hakim Ramadhan</h1>
+              <p class="lead">Mahasiswa ULBI | Teknik Informatika</p>
+              <a href="#projects" class="btn btn-primary">Lihat Semua Projek</a>
+              <p class="display-6 mt-3">Salah Satu Projek Saya</p>
+              <div class="container my-3">
+                <div class="row g-4"> <!-- g-4 memberi jarak antar card -->
+                    <div class="col-md-4 col-sm-6"> <!-- 3 kolom di desktop, 2 di tablet -->
+                        <div class="card">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Image 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Card 1</h5>
+                                <p class="card-text">Deskripsi singkat kartu ini.</p>
+                                <a href="#" class="btn btn-primary">Lihat</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Image 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Card 2</h5>
+                                <p class="card-text">Deskripsi singkat kartu ini.</p>
+                                <a href="#" class="btn btn-primary">Lihat</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Image 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Card 3</h5>
+                                <p class="card-text">Deskripsi singkat kartu ini.</p>
+                                <a href="#" class="btn btn-primary">Lihat</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </header>
+    
+    <!-- Hero Section -->
+
     <!-- Jumbotron -->
-    <div class="pt-5 text-black" style="background-color: #e2e1e1" id="home">
-      <div class="container pt-5">
+    <div class="pt-5 text-black" style="background-color: #273036" id="about">
+      <h1 class="text-center text-white display-6">Tentang Saya</h1>
+      <div class="container pt-5 pb-5">
         <div class="row justify-content-center align-items-center">
           <div class="col-sm-4">
-            <img src="img/IMG_2022.JPG" alt="RidwanHR" width="350" class="rounded-circle img-thumbnail bg-secondary" />
+            <img src="assets/img/IMG_2022.JPG" alt="RidwanHR" width="350" class="rounded-circle img-thumbnail bg-secondary" />
           </div>
           <div class="col-sm-5">
-            <h1 class="fw-bold">Ridwan Hakim Ramadhan</h1>
-            <p>Saya Adalah Mahasiswa ULBI</p>
-            <p style="margin-top: -20px">NPM : 714240050</p>
+            <p class="text-white fw-light fs-5">Hello, perkenalkan nama saya Ridwan Hakim Ramadhan, mahasiswa D4 Teknik Informatika di Universitas Logistik dan Bisnis Internasional Bandung dengan NPM 714240050, saya adalah orang yang menyukai hal-hal baru atau menarik untuk saya, terutama dunia pemrograman</p>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,128L720,64L1440,160L1440,320L720,320L0,320Z"></path></svg>
+      <div class="container pt-5 pb-5">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-sm-4">
+            <h1 class="text-white fs-3 fw-light">Pendidikan</h1>
+            <div class="card" style="width: 20rem">
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6nalN1cuj3BMOJ08TGKNd0TehbhfL0z9XFUIKM_iW1QMluWJVmUYGCqTtx1G7-Ov6GW9U2l9xMopYPh5jdtxhkXqU_ctNo2DMyJJ6QqV6BdmPXJKVkBUqfk-fUOn5mw/s220/%23Profile+IG.png" class="card-img-top" alt="ulbi"/>
+              <div class="card-body">
+                <p class="card-text">Universitas Logistik dan Bisnis Internasional (ULBI)</p>
+                <p class="card-text">D4 Teknik Informatika | <br />2024 - Sekarang</p>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 20rem">
+              <img src="https://secure.gravatar.com/avatar/a8143e73afd65f28a3944d91ca331fee?s=500&d=mm&r=g" class="card-img-top" alt="smkn2cimahi"/>
+              <div class="card-body">
+                <p class="card-text">SMKN2 CIMAHI</p>
+                <p class="card-text">Rekayasa Perangkat Lunak | <br />2020 - 2023</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-5">
+            <p class="text-white fw-light fs-5">Hello, perkenalkan nama saya Ridwan Hakim Ramadhan, mahasiswa D4 Teknik Informatika di Universitas Logistik dan Bisnis Internasional Bandung dengan NPM 714240050, saya adalah orang yang menyukai hal-hal baru atau menarik untuk saya, terutama dunia pemrograman</p>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Akhir Jumbotron -->
 
@@ -199,13 +266,15 @@
         </div>
       </div>
     </div>
+    </div>
 
     <!-- footer -->
      <footer class="bg-dark text-white p-3">
       &copy; 2024 RHRSITUS | Hak Cipta Dilindungi
      </footer>
     <!-- akhir footer -->
-    <!-- js bootstrap -->
+    <!-- js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
