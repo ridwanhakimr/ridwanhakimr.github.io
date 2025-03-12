@@ -12,8 +12,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <!-- penambahan tracker -->
     <script type="module" src="https://cdn.jsdelivr.net/gh/domyid/tracker@1.0.2/index.js"></script>
-    <!-- font -->
-    <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-ID.js" crossorigin="anonymous"></script>
+    <!-- icon bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   </head>
   <body>
     <!-- Navbar -->
@@ -80,11 +80,10 @@
             </div>
           </div>
         </header>
-    
     <!-- Hero Section -->
 
     <!-- Jumbotron -->
-    <div class="pt-5 text-black" style="background-color: #273036" id="about">
+    <div class="pt-5" style="background-color: #273036" id="about">
       <h1 class="text-center text-white display-6">Tentang Saya</h1>
       <div class="container pt-5 pb-5">
         <div class="row justify-content-center align-items-center">
@@ -96,34 +95,18 @@
           </div>
         </div>
       </div>
-      <div class="container pt-5 pb-5">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-sm-4">
-            <h1 class="text-white fs-3 fw-light">Pendidikan</h1>
-            <div class="card" style="width: 20rem">
-              <img
-                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6nalN1cuj3BMOJ08TGKNd0TehbhfL0z9XFUIKM_iW1QMluWJVmUYGCqTtx1G7-Ov6GW9U2l9xMopYPh5jdtxhkXqU_ctNo2DMyJJ6QqV6BdmPXJKVkBUqfk-fUOn5mw/s220/%23Profile+IG.png" class="card-img-top" alt="ulbi"/>
-              <div class="card-body">
-                <p class="card-text">Universitas Logistik dan Bisnis Internasional (ULBI)</p>
-                <p class="card-text">D4 Teknik Informatika | <br />2024 - Sekarang</p>
-              </div>
-            </div>
-            <br>
-            <div class="card" style="width: 20rem">
-              <img src="https://secure.gravatar.com/avatar/a8143e73afd65f28a3944d91ca331fee?s=500&d=mm&r=g" class="card-img-top" alt="smkn2cimahi"/>
-              <div class="card-body">
-                <p class="card-text">SMKN2 CIMAHI</p>
-                <p class="card-text">Rekayasa Perangkat Lunak | <br />2020 - 2023</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-5">
-            <p class="text-white fw-light fs-5">Hello, perkenalkan nama saya Ridwan Hakim Ramadhan, mahasiswa D4 Teknik Informatika di Universitas Logistik dan Bisnis Internasional Bandung dengan NPM 714240050, saya adalah orang yang menyukai hal-hal baru atau menarik untuk saya, terutama dunia pemrograman</p>
-          </div>
-        </div>
-      </div>
     </div>
     <!-- Akhir Jumbotron -->
+
+    <div class="hero-section text-center text-white d-flex align-items-center bg-dark" style="background-color: #273036">
+      <div class="container mt-5">
+        <h1 class="text-center text-white">CV Saya</h1>
+      <!-- Tombol Download -->
+        <a href="path/to/your/file.pdf" class="btn btn-success btn-lg mt-3" download>
+          <i class="bi bi-download"></i> Download CV
+        </a>
+      </div>
+    </div>
 
     <!-- kontak -->
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#273036" fill-opacity="1" d="M0,96L720,128L1440,192L1440,320L720,320L0,320Z"></path></svg>
@@ -155,7 +138,7 @@
     </div>
 
     <!-- footer -->
-     <footer class="bg-dark text-white p-3">
+     <footer class="bg-dark text-white p-3 text-center">
       &copy; 2024 RHRSITUS | Hak Cipta Dilindungi
      </footer>
     <!-- akhir footer -->
