@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #111827;  /* Background utama */
+  --accent-color: #14B8A6;   /* Warna aksen (tombol, link, highlight) */
+  --text-color: #E5E7EB;     /* Warna teks */
+}
+
 .card {
     transition: transform 0.3s;
 }
