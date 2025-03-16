@@ -10,19 +10,20 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.getElementById('contactForm').addEventListener('submit', function (e) {
-    e.preventDefault(); // Mencegah form submit default
+  e.preventDefault(); // Mencegah form submit default
 
-    // Ambil nilai input
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value;
+  // Ambil nilai input
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
 
-    // Validasi sederhana
-    if (name && email && subject && message) {
-      alert('Pesan berhasil dikirim!');
-      document.getElementById('contactForm').reset(); // Reset form
-    } else {
-      alert('Harap isi semua field!');
-    }
-  });
+  // Format pesan
+  const subject = `Pesan dari ${name}`;
+  const body = `Nama: ${name}%0D%0AEmail: ${email}%0D%0APesan: ${message}`;
+
+  // Buat link mailto
+  const mailtoLink = `mailto:ridwanhakimrmdhn@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+
+  // Buka link mailto
+  window.location.href = mailtoLink;
+});

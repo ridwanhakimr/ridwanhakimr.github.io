@@ -151,7 +151,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Calon Dosen</h5>
                   <p class="card-text">Website Calon Dosen dimana tempat untuk belajar dan berbagi ilmu. Pengguna bisa belajar dari video video yang tersedia, serta pengguna bisa mengupload video, dan menanyakan pertanyaan yang bisa dijawab oleh pengguna lain</p>
-                  <a href="https://github.com/ridwanhakimr/calondosen.github.io" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Source Code</a>
+                  <a href="https://github.com/ridwanhakimr/calondosen.github.io" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Lihat Kode</a>
                 </div>
               </div>
             </div>
@@ -196,39 +196,20 @@
     <!-- kontak -->
      <section id="contact" class="contact-section" style="background-color: #273036;">
       <div class="container">
-        <div class="row">
-          <!-- informasi kontak -->
-           <div class="col-md-5 col-sm-4">
-            <div class="contact-info">
-              <h3>Hubungi Saya</h3>
-              <p><i class="bi bi-geo-alt"></i> Jl. Contoh No. 123, Kota Contoh, Indonesia</p>
-            <p><i class="bi bi-envelope"></i> <a href="mailto:email@contoh.com">email@contoh.com</a></p>
-            <p><i class="bi bi-phone"></i> <a href="tel:+621234567890">+62 123 4567 890</a></p>
-            <p><i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/contoh" target="_blank">LinkedIn</a></p>
+        <div class="contact-form">
+          <h2>Hubungi Saya</h2>
+          <form id="contactForm">
+            <div class="mb-3">
+              <input type="text" class="form-control" id="name" placeholder="Nama Anda" required>
             </div>
-           </div>
-
-          <!-- form Kontak -->
-          <div class="col-md-7">
-            <div class="contact-form">
-              <h3>Kirim Pesan</h3>
-              <form id="contactForm">
-                <div class="mb-3">
-                  <input type="text" class="form-control" id="name" placeholder="Nama Anda" required>
-                </div>
-                <div class="mb-3">
-                  <input type="email" class="form-control" id="email" placeholder="Email Anda" required>
-                </div>
-                <div class="mb-3">
-                  <input type="text" class="form-control" id="subject" placeholder="Subjek" required>
-                </div>
-                <div class="mb-3">
-                  <textarea class="form-control" id="message" rows="5" placeholder="Pesan Anda" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Kirim Pesan</button>
-              </form>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="email" placeholder="Email Anda" required>
             </div>
-          </div>
+            <div class="mb-3">
+              <textarea class="form-control" id="message" rows="5" placeholder="Pesan Anda" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-primary-manual">Kirim Pesan</button>
+          </form>
         </div>
       </div>
      </section>
