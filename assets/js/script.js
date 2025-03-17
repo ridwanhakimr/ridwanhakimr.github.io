@@ -27,3 +27,13 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
   // Buka link mailto
   window.location.href = mailtoLink;
 });
+
+// Tombol Kembali ke Atas
+const backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', function () {
+  if (window.scrollY > 300) {
+    backToTop.classList.add('show');
+  } else {
+    backToTop.classList.remove('show');
+  }
+});
